@@ -5,50 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Templates | AnimateItNow</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Dark mode styles from your version */
+      body.dark-theme {
+        background-color: #121212;
+        color: #f5f5f5;
+      }
+      body.dark-theme .templates-main h1,
+      body.dark-theme .template-card h2,
+      body.dark-theme .site-name,
+      body.dark-theme .nav-links a {
+        color: #ffffff;
+      }
+      body.dark-theme .template-card {
+        background-color: #1e1e1e;
+        border: 1px solid #444;
+      }
+      body.dark-theme .template-btn {
+        color: #ffffff;
+        background-color: #333;
+        border: 1px solid #555;
+      }
+      body.dark-theme .template-btn:hover {
+        background-color: #444;
+      }
+      body.dark-theme .navbar {
+        background-color: #1a1a1a;
+      }
+      body.dark-theme .nav-links a:hover {
+        color: #90caf9;
+      }
+    </style>
   </head>
-
   <body>
     <nav class="navbar">
       <div class="nav-left">
-        <img src="images/logo.png" alt="Logo" class="logo" />
+        <img src="images/logo.png" alt="AnimateItNow Logo" class="logo" />
         <span class="site-name">AnimateItNow</span>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="templates.html" class="active">Templates</a></li>
-        <li><a href="contributors.html">Contributors</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="templates.html">Templates</a></li>
+          <li><a href="contributors.html">Contributors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+              🌙
+            </button>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main class="templates-main">
-      <h1 class="fade-in">Templates Gallery</h1>
+      <h1>Templates Gallery</h1>
       <section class="templates-grid">
-        <article class="template-card scroll-fade">
+        <article class="template-card">
           <h2>Login Page UI</h2>
           <div class="template-preview login-preview"></div>
-          <a class="template-btn" href="templates/login.html">View</a>
+          <a class="template-btn" href="templates/login.html">View Template</a>
         </article>
-        <article class="template-card scroll-fade">
+        <article class="template-card">
           <h2>Hover Button Effects</h2>
           <div class="template-preview button-preview"></div>
-          <a class="template-btn" href="templates/button.html">View</a>
+          <a class="template-btn" href="templates/button.html">View Template</a>
         </article>
-        <article class="template-card scroll-fade">
+        <article class="template-card">
           <h2>Loaders</h2>
           <div class="template-preview loader-preview"></div>
-          <a class="template-btn" href="templates/loader.html">View</a>
+          <a class="template-btn" href="templates/loader.html">View Template</a>
         </article>
-        <article class="template-card scroll-fade">
-          <h2>Modal/Popup Templates</h2>
+        <article class="template-card">
+          <h2>Popup Templates</h2>
           <div class="template-preview modal-preview"></div>
-          <a class="template-btn" href="templates/modal.html">View</a>
+          <a class="template-btn" href="templates/modal.html">View Template</a>
         </article>
-        <article class="template-card scroll-fade">
+        <article class="template-card">
           <h2>3D Tilt Card</h2>
-          <div class="template-preview tilt-preview" style="background: #4f8cff;"></div>
-          <a class="template-btn" href="./templates/tilt-card.html">View</a>
+          <div
+            class="template-preview tilt-preview"
+            style="background: #4f8cff"
+          ></div>
+          <a class="template-btn" href="templates/tilt-card.html">View Template</a>
         </article>
       </section>
     </main>
@@ -56,26 +99,56 @@
     <footer>
       <p>Made with ❤️ by Anuj and Contributors</p>
     </footer>
-    <script src="script.js"></script>
+
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const animatedCards = document.querySelectorAll(".template-card.scroll-fade");
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          {
-            threshold: 0.1,
-          }
-        );
-        animatedCards.forEach((card) => {
-          observer.observe(card);
-        });
+      // Theme toggle functionality
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      // Function to apply the theme
+      const applyTheme = (theme) => {
+        if (theme === "dark") {
+          body.classList.add("dark-theme");
+          themeToggle.textContent = "☀️";
+        } else {
+          body.classList.remove("dark-theme");
+          themeToggle.textContent = "🌙";
+        }
+      };
+
+      // Check for saved theme in localStorage
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else {
+        // Otherwise, check for user's system preference
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        applyTheme(prefersDark ? "dark" : "light");
+      }
+
+      // Event listener for the toggle button
+      themeToggle.addEventListener("click", () => {
+        const newTheme = body.classList.contains("dark-theme") ? "light" : "dark";
+        localStorage.setItem("theme", newTheme);
+        applyTheme(newTheme);
+      });
+
+      // Scroll animation for cards
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".template-card").forEach((card) => {
+        observer.observe(card);
       });
     </script>
   </body>
