@@ -5,33 +5,26 @@ on:
   pull_request:
     types: [opened]
 jobs:
-  greet-issue:
+  greet:
     runs-on: ubuntu-latest
-    if: github.event_name == 'issues'
     steps:
-      - name: Greet new issue
+      - name: Greet new issue or pull request
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.payload.issue.number,
-              body: "🎉 Welcome! Thanks for opening your issue! The team will review it soon."
-            });
-  greet-pr:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    steps:
-      - name: Greet new pull request
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.payload.pull_request.number,
-              body: "🚀 Thanks for your pull request! We’ll review it soon."
-            });
+            if (github.event_name === 'issues') {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.issue.number,
+                body: "🎉 Welcome! Thanks for opening your issue! The team will review it soon."
+              });
+            } else if (github.event_name === 'pull_request') {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                body: "🚀 Thanks for your pull request! We’ll review it soon."
+              });
+            }
