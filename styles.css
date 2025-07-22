@@ -24,6 +24,26 @@ body {
   min-height: 100vh;
 }
 
+.list-group {
+  list-style: none; /* Removes bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  background-color: #f1f1f1;
+  margin: 8px 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #e0e0e0;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -383,7 +403,46 @@ body.dark .info-section p {
   top: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
+.timer-preview {
+  background: linear-gradient(135deg, #e0e7ff 60%, #4f8cff 100%);
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
+.timer-preview::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.timer-preview::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: #4f8cff;
+  top: calc(50% - 20px); 
+  left: 50%;
+  transform-origin: bottom center;
+  transform: translateX(-50%) rotate(0deg);
+  animation: tick 8s linear infinite;
+}
+
+@keyframes tick {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
 .template-btn {
   margin-top: 0.7rem;
   background: var(--accent);

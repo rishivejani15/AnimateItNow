@@ -25,7 +25,6 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Fade-in and scroll animations
-window.addEventListener('DOMContentLoaded', () => {
   // Animate landing section
   document.querySelectorAll('.fade-in').forEach(el => {
     el.style.opacity = 1;
@@ -43,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.scroll-fade').forEach(section => {
     observer.observe(section);
   });
-}); 
+
 
 // Contact form validation
 document.addEventListener('DOMContentLoaded', function() {
