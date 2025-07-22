@@ -48,7 +48,7 @@
         <article class="template-card scroll-fade">
           <h2>3D Tilt Card</h2>
           <div class="template-preview tilt-preview" style="background: #4f8cff;"></div>
-          <a class="template-btn" href="templates/tilt-card.html">View</a>
+          <a class="template-btn" href="./templates/tilt-card.html">View</a>
         </article>
       </section>
     </main>
@@ -57,5 +57,26 @@
       <p>Made with ❤️ by Anuj and Contributors</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const animatedCards = document.querySelectorAll(".template-card.scroll-fade");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+        animatedCards.forEach((card) => {
+          observer.observe(card);
+        });
+      });
+    </script>
   </body>
 </html>
