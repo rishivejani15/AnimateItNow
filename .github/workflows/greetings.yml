@@ -13,18 +13,13 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            if (github.event_name === 'issues') {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.payload.issue.number,
-                body: "🎉 Welcome! Thanks for opening your issue! The team will review it soon."
-              });
-            } else if (github.event_name === 'pull_request') {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.payload.pull_request.number,
-                body: "🚀 Thanks for your pull request! We’ll review it soon."
-              });
-            }
+            const isPR = github.event_name === 'pull_request';
+            const message = isPR
+              ? "🚀 Thanks for your pull request! We’ll review it soon."
+              : "🎉 Welcome! Thanks for opening your issue! The team will review it soon.";
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: message
+            });
