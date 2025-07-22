@@ -20,7 +20,6 @@ jobs:
             });
 
             const currentTitle = context.payload.issue.title.trim().toLowerCase();
-
             const duplicate = issues.find(issue =>
               issue.title.trim().toLowerCase() === currentTitle &&
               issue.number !== context.payload.issue.number
@@ -31,7 +30,6 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.payload.issue.number,
-                body: `⚠️ This issue appears to be a duplicate of [#${duplicate.number} - ${duplicate.title}](${duplicate.html_url}). Please check existing issues before opening a new one.`
+                body: `⚠️ This issue looks similar to [#${duplicate.number} - ${duplicate.title}](${duplicate.html_url}). Please check existing issues before creating a new one.`
               });
             }
-
