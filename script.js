@@ -44,6 +44,40 @@ themeToggle.addEventListener('click', () => {
   });
 
 
+
+// testinomial ke liye 
+const slider = document.getElementById('slider');
+if(slider){
+  const slides = document.querySelectorAll('.card');
+let current = 0;
+let total = slides.length;
+
+
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.card');
+  const total = slides.length;
+  if (index >= total) current = 0;
+  else if (index < 0) current = total - 1;
+  else current = index;
+  slider.style.transform = `translateX(-${current * 100}%)`;
+}
+
+function nextSlide() {
+  showSlide(current + 1);
+}
+
+function prevSlide() {
+  showSlide(current - 1);
+}
+
+setInterval(() => {
+  nextSlide();
+}, 5000);
+
+}
+
+
 // Contact form validation
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
@@ -119,3 +153,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 });
+
+
