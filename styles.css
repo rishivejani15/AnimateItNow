@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-bg: #f9f9f9;
   --primary-text: #222;
@@ -14,15 +15,16 @@
   --footer-text: #fff;
   --card-bg: #fff;
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --primary: #4f8cff;
+  --transition: 0.4s ease-in-out 0.2s;
+  --primary: #4f8cff;
   --white: #ffffff;
 }
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: var(--primary-bg);
+  background-color: var(--primary-bg);
   color: var(--primary-text);
-  transition: background var(--transition), color var(--transition);
+  /* transition: background var(--transition), color var(--transition); */
   min-height: 100vh;
 }
 
@@ -53,7 +55,7 @@ body {
   left: 0;
   right: 0;
   height: 64px;
-  background: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
   color: var(--nav-text);
   display: flex;
   align-items: center;
@@ -65,31 +67,33 @@ body {
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  transition: background var(--transition), color var(--transition);
+  transition: background-color var(--transition), color var(--transition);
 }
-
-
 
 .nav-left {
   display: flex;
   align-items: center;
 }
+
 .logo {
   width: 36px;
   height: 36px;
   margin-right: 0.75rem;
   object-fit: contain;
 }
+
 .site-name {
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.5px;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
+
 .nav-links a {
   text-decoration: none;
   color: var(--nav-text);
@@ -97,18 +101,21 @@ body {
   transition: color var(--transition);
   position: relative;
 }
+
 .nav-links a.active,
 .nav-links a:hover {
   color: var(--accent);
 }
+
 #theme-toggle {
-  background: none;
+  background-color: transparent;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   margin-left: 1.5rem;
   color: var(--nav-text);
   transition: color var(--transition);
+  transition: background-color 0.4s ease-in 0.2s, color 0.4s ease-in 0.2s;
 }
 
 /* Landing Section */
@@ -145,7 +152,7 @@ body {
 }
 .cta-btn {
   display: inline-block;
-  background: var(--accent);
+  background-color: var(--accent);
   color: #fff;
   font-weight: 600;
   padding: 0.9em 2.2em;
@@ -157,7 +164,7 @@ body {
   animation: bounce 1.2s infinite alternate;
 }
 .cta-btn:hover {
-  background: #2563eb;
+  background-color: #2563eb;
   transform: scale(1.05);
 }
 
@@ -206,7 +213,7 @@ main {
   /* margin: 3rem 0; */
   
   padding: 2rem 1.5rem;
-  background: var(--card-bg);
+  background-color: var(--card-bg);
   border-radius: 1.2rem;
   box-shadow: var(--card-shadow);
   
@@ -227,7 +234,7 @@ main {
 
 /* Footer */
 footer {
-  background: var(--footer-bg);
+  background-color: var(--footer-bg);
   color: var(--footer-text);
   text-align: center;
   padding: 1.2rem 0;
@@ -259,10 +266,6 @@ body.dark .info-section p {
 
 /* Templates Page */
 
-
-
-
-
 .templates-main {
   max-width: 1100px;
   margin: 0 auto;
@@ -275,10 +278,8 @@ body.dark .info-section p {
   margin: 2.5rem;
   font-size: 2.5rem;
   font-weight: 700;
-
   letter-spacing: 1px;
   animation: fadeIn 1s ease-in-out;
-
   color: rgb(0, 0, 0);
 }
 
@@ -290,7 +291,7 @@ body.dark .info-section p {
 }
 
 .template-card {
-  background: var(--card-bg);
+  background-color: var(--card-bg);
   border-radius: 1.1rem;
   box-shadow: black;
   padding: 2rem 1.2rem 1.5rem 1.2rem;
@@ -299,12 +300,9 @@ body.dark .info-section p {
   align-items: center;
   opacity: 0;
   transform: translateY(40px);
-
-  
   animation: none;
   position: relative;
   overflow: hidden;
-
   transition: opacity 0.7s, transform 0.7s;
 
 }
@@ -314,13 +312,10 @@ body.dark .info-section p {
   transform: translateY(0);
 }
 
-
 .template-card:hover {
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
-
-
 
 .template-card h2 {
   font-size: 1.2rem;
@@ -335,7 +330,7 @@ body.dark .info-section p {
   height: 90px;
   border-radius: 0.8rem;
   margin-bottom: 1.2rem;
-  background: #e0e7ff;
+  background-color: #e0e7ff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -377,7 +372,7 @@ body.dark .info-section p {
   display: block;
   width: 60px;
   height: 30px;
-  background: #fff;
+  background-color: #fff;
   border-radius: 6px;
   position: absolute;
   left: 20px;
@@ -394,7 +389,7 @@ body.dark .info-section p {
   display: block;
   width: 60px;
   height: 18px;
-  background: #4f8cff;
+  background-color: #4f8cff;
   border-radius: 9px;
   position: absolute;
   left: 20px;
@@ -413,7 +408,7 @@ body.dark .info-section p {
 }
 
 .loader-preview {
-  background: var(--light);
+  background-color: var(--light);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -448,7 +443,7 @@ body.dark .info-section p {
   display: block;
   width: 60px;
   height: 30px;
-  background: #4f8cff;
+  background-color: #4f8cff;
   border-radius: 6px;
   position: absolute;
   left: 20px;
@@ -466,7 +461,7 @@ body.dark .info-section p {
   content: "";
   width: 50px;
   height: 50px;
-  background: white;
+  background-color: white;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -497,7 +492,7 @@ body.dark .info-section p {
 }
 .template-btn {
   margin-top: 0.7rem;
-  background: var(--accent);
+  background-color: var(--accent);
   color: var(--light);
   border: none;
   border-radius: 2em;
@@ -510,12 +505,12 @@ body.dark .info-section p {
   text-decoration: none;
 }
 .template-btn:hover {
-  background: var(--secondary);
+  background-color: var(--secondary);
   transform: scale(1.05);
 }
 
 footer {
-  background: black;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 1.2rem 0;
@@ -577,7 +572,7 @@ footer {
 
 /* Contributors Page */
 .contributor-card {
-  background: var(--card-bg);
+  background-color: var(--card-bg);
   border-radius: 1.1rem;
   box-shadow: var(--card-shadow);
   padding: 1.5rem;
@@ -644,7 +639,7 @@ body.dark .contributor-card:hover {
 }
 
 .contact-container {
-  background: var(--card-bg);
+  background-color: var(--card-bg);
   border-radius: 1.2rem;
   box-shadow: var(--card-shadow);
   padding: 2.5rem;
@@ -675,7 +670,7 @@ body.dark .contributor-card:hover {
   border-radius: 0.5rem;
   font-size: 1rem;
   font-family: inherit;
-  background: var(--primary-bg);
+  background-color: var(--primary-bg);
   color: var(--primary-text);
   transition: border-color 0.2s ease;
 }
@@ -692,7 +687,7 @@ body.dark .contributor-card:hover {
 }
 
 .submit-btn {
-  background: var(--accent);
+  background-color: var(--accent);
   color: #fff;
   border: none;
   border-radius: 0.5rem;
@@ -705,14 +700,14 @@ body.dark .contributor-card:hover {
 }
 
 .submit-btn:hover {
-  background: #2563eb;
+  background-color: #2563eb;
 }
 
 /* Dark theme support */
 body.dark .form-group input,
 body.dark .form-group textarea {
   border-color: #374151;
-  background: var(--card-bg);
+  background-color: var(--card-bg);
 }
 
 body.dark .form-group input:focus,
@@ -734,7 +729,7 @@ body.dark .form-group textarea:focus {
 /* Disabled button styles */
 .submit-btn:disabled,
 .submit-btn.disabled {
-  background: #9ca3af;
+  background-color: #9ca3af;
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
@@ -743,7 +738,7 @@ body.dark .form-group textarea:focus {
 
 .submit-btn:disabled:hover,
 .submit-btn.disabled:hover {
-  background: #9ca3af;
+  background-color: #9ca3af;
   transform: none;
   box-shadow: none;
 }
@@ -751,11 +746,34 @@ body.dark .form-group textarea:focus {
 /* Dark theme disabled state */
 body.dark .submit-btn:disabled,
 body.dark .submit-btn.disabled {
-  background: #4b5563;
+  background-color: #4b5563;
   color: #9ca3af;
 }
 
 body.dark .submit-btn:disabled:hover,
 body.dark .submit-btn.disabled:hover {
-  background: #4b5563;
+  background-color: #4b5563;
+}
+
+/* 🌗 Smooth transitions for theme toggle */
+body,
+.navbar,
+footer,
+main,
+section,
+.info-section,
+.template-card,
+.list-group-item,
+.cta-btn,
+.contributor-card,
+.form-group input,
+.form-group textarea 
+#theme-toggle,
+.nav-links a,
+.site-name {
+  transition: 
+    background-color 0.4s ease-in 0.2s,
+    color 0.4s ease-in 0.2s,
+    border-color 0.4s ease-in 0.2s,
+    box-shadow 0.4s ease-in 0.2s;
 }
