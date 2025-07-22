@@ -15,3 +15,6 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           configuration-path: .github/labeler.yml
+          dot: true
+          fail-on-error: false
+
