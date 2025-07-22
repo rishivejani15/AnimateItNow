@@ -1,16 +1,8 @@
 bug:
   - '**/*.js'
-  - '**/*.css'
-  - '**/*.html'
-
-enhancement:
-  - '**/*.ts'
-  - '**/*.yml'
 
 documentation:
   - '**/*.md'
-  - '**/README.md'
-  - '**/docs/**'
 
 github:
   - '.github/**'
