@@ -2,20 +2,27 @@ bug:
   - '**/*.js'
   - '**/*.css'
   - '**/*.html'
-  - '**/*.ts'
-
-enhancement:
-  - '**/feature_request.yml'
-  - '**/enhancement.yml'
 
 documentation:
   - '**/*.md'
   - '**/README.md'
-  - '**/LEARN.md'
   - '**/docs/**'
+
+enhancement:
+  - '**/*.ts'
+  - '**/feature_request.yml'
+
+gssoc25:
+  - '**/*'
+
+level1:
+  - '**/level1/**'
+
+level2:
+  - '**/level2/**'
+
+level3:
+  - '**/level3/**'
 
 github:
   - '.github/**'
-
-ci:
-  - '.github/workflows/**'
