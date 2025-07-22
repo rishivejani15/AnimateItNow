@@ -2,15 +2,20 @@ bug:
   - '**/*.js'
   - '**/*.css'
   - '**/*.html'
+  - '**/*.ts'
 
 enhancement:
-  - '**/*.ts'
   - '**/feature_request.yml'
+  - '**/enhancement.yml'
 
 documentation:
   - '**/*.md'
   - '**/README.md'
+  - '**/LEARN.md'
   - '**/docs/**'
 
 github:
-  - '.github/**/*'
+  - '.github/**'
+
+ci:
+  - '.github/workflows/**'
