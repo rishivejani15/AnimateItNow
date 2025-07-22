@@ -5,7 +5,7 @@ bug:
 
 enhancement:
   - '**/*.ts'
-  - '**/feature_request.yml'
+  - '**/*.yml'
 
 documentation:
   - '**/*.md'
@@ -14,7 +14,6 @@ documentation:
 
 github:
   - '.github/**'
-  - '**/*.yml'
 
-ci:
-  - '.github/workflows/**'
+gssoc25:
+  - '**/*'
