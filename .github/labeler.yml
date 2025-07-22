@@ -1,0 +1,16 @@
+bug:
+  - '**/*.js'
+  - '**/*.css'
+  - '**/*.html'
+
+enhancement:
+  - '**/*.ts'
+  - '**/feature_request.yml'
+
+documentation:
+  - '**/*.md'
+  - '**/README.md'
+  - '**/docs/**'
+
+github:
+  - '.github/**'

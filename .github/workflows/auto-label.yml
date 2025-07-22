@@ -1,13 +1,16 @@
-name: Auto Label Issues
+name: Auto Label Issues and PRs
+
 on:
   issues:
     types: [opened]
+  pull_request:
+    types: [opened, synchronize]
+
 jobs:
-  add-label:
+  label:
     runs-on: ubuntu-latest
     steps:
-      - name: Add 'triage' label
-        uses: actions-ecosystem/action-add-labels@v1
+      - name: Apply labels using labeler
+        uses: actions/labeler@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          labels: triage
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
