@@ -1,11 +1,30 @@
-name: Greet New Contributors
-on: [pull_request, issues]
+name: Greet Every Contributor
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
 jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/first-interaction@v1
+      - name: Greet new issue or pull request
+        uses: actions/github-script@v7
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: "🎉 Welcome! Thanks for opening your first issue!"
-          pr-message: "🚀 Thanks for your first pull request! We’ll review it soon."
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            if (github.event_name === 'issues') {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.issue.number,
+                body: "🎉 Welcome! Thanks for opening your issue! The team will review it soon."
+              });
+            } else if (github.event_name === 'pull_request') {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                body: "🚀 Thanks for your pull request! We’ll review it soon."
+              });
+            }
