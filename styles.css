@@ -48,6 +48,8 @@ body {
 .nav-left {
   display: flex;
   align-items: center;
+  width: 25ch; 
+  position: relative;
 }
 .logo {
   width: 36px;
@@ -55,17 +57,45 @@ body {
   margin-right: 0.75rem;
   object-fit: contain;
 }
-.site-name {
+.site-name { 
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   letter-spacing: 0.5px;
+  cursor: pointer; 
+  border-right: 2px solid var(--accent);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(14) 1s infinite, blink 0.6s infinite step-end alternate;
 }
+
+@keyframes typing{ 
+  0%{
+    width: 0;
+  }
+  50%{
+    width: 14ch;
+  }
+  70%{
+    width: 14ch;
+  }
+  100%{
+    width: 0;
+  }
+}
+
+@keyframes blink{
+  50% {border-color: transparent;}
+}
+  
+
 .nav-links {
   list-style: none;
-  display: flex;
-  gap: 1.5rem;
+  display: flex;  
+  gap: 1.5rem; 
+  left: 40%;
 }
-.nav-links a {
+.nav-links a { 
   text-decoration: none;
   color: var(--nav-text);
   font-weight: 500;
