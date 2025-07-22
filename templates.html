@@ -9,6 +9,105 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      /* 🌙 Navbar fixes for dark theme */
+body.dark-theme .navbar {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* 🔗 Navbar link styling */
+body.dark-theme .nav-links a {
+  color: #ffffff;
+}
+
+/* 🎨 Site name text */
+body.dark-theme .site-name {
+  color: #ffffff;
+}
+
+/* 🖼 Logo brightness tweak (if logo is dark) */
+body.dark-theme .logo {
+  filter: brightness(1.2) contrast(1.2);
+}
+      /* 🖋️ Main heading fix */
+body.dark-theme .templates-main h1 {
+  color: #ffffff;
+}
+
+/* 📝 Card title fix */
+body.dark-theme .template-card h2 {
+  color: #ffffff;
+}
+
+/* 🎯 Button text */
+body.dark-theme .template-btn {
+  color: #ffffff;
+}
+
+/* 📋 Preview sections (if they include content later) */
+body.dark-theme .template-preview {
+  color: #ffffff;
+}
+.templates-main h1,
+.template-card h2,
+.template-btn {
+  transition: color 0.3s ease;
+}
+/* 🔲 Container styling */
+body.dark-theme .templates-main {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* 🔳 Grid layout */
+body.dark-theme .templates-grid {
+  background-color: #181818;
+}
+
+/* 🧩 Individual cards */
+body.dark-theme .template-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔍 Card titles */
+body.dark-theme .template-card h2 {
+  color: #ffffff;
+}
+
+/* 🎥 Preview boxes */
+body.dark-theme .template-preview {
+  background-color: #2a2a2a;
+  border: 1px dashed #444;
+}
+
+/* 🖱 Buttons */
+body.dark-theme .template-btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+body.dark-theme .template-btn:hover {
+  background-color: #444;
+}
+
+/* 📜 Footer */
+body.dark-theme footer {
+  background-color: #121212;
+  color: #cccccc;
+}
+.templates-main,
+.templates-grid,
+.template-card,
+.template-btn,
+.template-preview {
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+    </style>
   </head>
   <body>
     <nav class="navbar">
@@ -48,43 +147,7 @@
           <div class="template-preview modal-preview"></div>
           <a class="template-btn" href="templates/modal.html">View Template</a>
         </article>
-        <article class="template-card scroll-fade">
-
-          <h2>Cards Templates</h2>
-          <div class="template-preview "></div>
-          <a class="template-btn" href="templates/card_hover.html">View</a>
-        </article>
-        <article class="template-card scroll-fade">
-          <h2>Testinomials</h2>
-          <div class="template-preview "></div>
-          <a class="template-btn" href="templates/Testinomials_Sliders.html">View</a>
-        </article>
-
-        <article class="template-card scroll-fade">
-          <h2>404 Page</h2>
-          <div class="template-preview "></div>
-          <a class="template-btn" href="templates/404.html">View</a>
-        </article>
-
-        <article class="template-card scroll-fade">
-          <h2>Profile </h2>
-          <div class="template-preview "></div>
-          <a class="template-btn" href="templates/profile_card.html">View</a>
-      </article>
-
-      <article class="template-card scroll-fade">
-          <h2>Countdown Timer Templates</h2>
-          <div class="template-preview timer-preview"></div>
-          <a class="template-btn" href="templates/timer.html">View</a>
-
-        </article>
       </section>
-
-
-      
-      
-
-
     </main>
 
     <footer>
