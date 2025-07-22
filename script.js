@@ -25,7 +25,7 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Fade-in and scroll animations
-
+window.addEventListener('DOMContentLoaded', () => {
   // Animate landing section
   document.querySelectorAll('.fade-in').forEach(el => {
     el.style.opacity = 1;
@@ -43,13 +43,47 @@ themeToggle.addEventListener('click', () => {
   document.querySelectorAll('.scroll-fade').forEach(section => {
     observer.observe(section);
   });
+}); 
+
+
+// testinomial ke liye 
+const slider = document.getElementById('slider');
+if(slider){
+  const slides = document.querySelectorAll('.card');
+let current = 0;
+let total = slides.length;
+
+
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.card');
+  const total = slides.length;
+  if (index >= total) current = 0;
+  else if (index < 0) current = total - 1;
+  else current = index;
+  slider.style.transform = `translateX(-${current * 100}%)`;
+}
+
+function nextSlide() {
+  showSlide(current + 1);
+}
+
+function prevSlide() {
+  showSlide(current - 1);
+}
+
+setInterval(() => {
+  nextSlide();
+}, 5000);
+
+}
 
 
 // Contact form validation
-
+document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
     const submitBtn = document.querySelector('.submit-btn');
-    // const formInputs = contactForm.querySelectorAll('input[required], textarea[required]');
+    const formInputs = contactForm.querySelectorAll('input[required], textarea[required]');
     
     // Initially disable the submit button
     submitBtn.disabled = true;
@@ -79,7 +113,7 @@ themeToggle.addEventListener('click', () => {
         input.addEventListener('input', checkFormValidity);
         input.addEventListener('blur', checkFormValidity);
     });
-
+});
 
   const contributorsGrid = document.getElementById('contributors-grid');
 
@@ -122,31 +156,3 @@ themeToggle.addEventListener('click', () => {
 });
 
 
-// testinomial ke liye 
-const slider = document.getElementById('slider');
-const slides = document.querySelectorAll('.card');
-let current = 0;
-let total = slides.length;
-
-
-
-function showSlide(index) {
-  const slides = document.querySelectorAll('.card');
-  const total = slides.length;
-  if (index >= total) current = 0;
-  else if (index < 0) current = total - 1;
-  else current = index;
-  slider.style.transform = `translateX(-${current * 100}%)`;
-}
-
-function nextSlide() {
-  showSlide(current + 1);
-}
-
-function prevSlide() {
-  showSlide(current - 1);
-}
-
-setInterval(() => {
-  nextSlide();
-}, 5000);
