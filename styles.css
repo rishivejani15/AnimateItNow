@@ -89,6 +89,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   width: 0;
+  /* Add animation in website Name */
   animation: typing 3s steps(14) 1s infinite, blink 0.6s infinite step-end alternate;
 }
 
@@ -127,6 +128,7 @@ body {
   position: relative;
 }
 
+/* add underline in navLinks */
 .nav-links a::after{
   content: "";
   position: absolute;
