@@ -775,21 +775,60 @@ body.dark .landing-section p {
   transform: scale(1.05);
 }
 
-footer {
-  background: black;
+.footer {
+  background: linear-gradient(135deg, #3f5efb, #9f5de2, #ff6ec4);
   color: white;
   text-align: center;
-  padding: 1.2rem 0;
+  padding: 1.5rem 1rem;
   font-size: 1rem;
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  margin-top: 0;
-  z-index: 100;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+.footer-right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  text-align: left;
+}
+
+.footer-bottom {
+  padding-top: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Responsive Design */
+@media (max-width: 768px) {
+  .footer-left {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 @media (max-width: 900px) {
   .templates-main {
     max-width: 98vw;
