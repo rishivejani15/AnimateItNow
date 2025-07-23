@@ -81,7 +81,7 @@ body {
   font-size: 1.3rem;
   letter-spacing: 0.5px;
   cursor: pointer; 
-  border-right: 2px solid var(--accent);
+  border-right: 2px solid var(--white);
   white-space: nowrap;
   overflow: hidden;
   width: 0;
@@ -110,12 +110,12 @@ body {
   
 
 
-.site-name {
+/* .site-name {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #1b1717;
   animation: fadeInLeft 0.8s ease;
-}
+}  */
 
 /* Navigation Links */
 .nav-links {
