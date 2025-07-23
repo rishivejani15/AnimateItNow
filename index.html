@@ -39,7 +39,9 @@
       discovering stunning web UI components. Join us to contribute, learn,
       and inspire others!
     </p>
-    <a href="#what-is" class="cta-btn bounce">Get Started</a>
+    <a href="#what-is" class="cta-btn bounce"
+       onclick="event.preventDefault(); const el = document.getElementById('what-is'); window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' });"      
+      >Get Started</a>
   </header>
 
     <main>
