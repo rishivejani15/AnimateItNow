@@ -191,6 +191,23 @@ body {
   border-radius: 6px;
 }
 
+.github-icon svg path {
+  fill: #24292e; 
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .github-icon svg path {
+    fill: #ffffff; 
+  }
+}
+
+
+.github-icon:hover svg path,
+.github-icon:focus svg path {
+  fill: #0366d6; 
+}
+
 /* Theme Toggle */
 #theme-toggle {
   background: transparent;
