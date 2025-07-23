@@ -22,11 +22,16 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: var(--primary-bg);
   color: var(--primary-text);
-  /* transition: background var(--transition), color var(--transition); */
+  background: var(--primary-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.6s ease-in-out, color 0.6s ease-in-out;
   min-height: 100vh;
 }
+
+
 
 .list-group {
   list-style: none; /* Removes bullets */
@@ -248,8 +253,8 @@ footer {
 }
 
 /* Dark Theme */
-body.dark {
-  --primary-bg: #181a20;
+  body.dark {
+  --primary-bg: url("./images/bg.jpg");
   --primary-text: #f3f3f3;
   --nav-bg: #23272f;
   --nav-text: #f3f3f3;
@@ -257,9 +262,11 @@ body.dark {
   --footer-text: #f3f3f3;
   --card-bg: #23272f;
 }
+
 body.dark .landing-section {
   background: linear-gradient(120deg, #23272f 0%, #181a20 100%);
 }
+
 body.dark .info-section p {
   color: #ccc;
 }
