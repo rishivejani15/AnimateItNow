@@ -293,6 +293,7 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  width: 100%;
   max-width: 800px; /* 🔹 Decreased width */
   margin: 0 auto;
   padding-bottom: 20px;
@@ -302,7 +303,7 @@ main {
 .footer-left {
   flex: 1;
   min-width: 260px;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 
 .footer-left h2 {
@@ -321,12 +322,14 @@ main {
 .footer-right {
   flex: 1;
   min-width: 220px;
+  padding-left: 50px;
 }
 
 .footer-right h4 {
   font-size: 1.2rem;
   margin-bottom: 12px;
   color: #ffffff;
+  padding: 5px;
 }
 
 .footer-right ul {
@@ -347,9 +350,8 @@ main {
 }
 
 .footer-right a:hover {
-  color: #ffec99;
+  color: #e4f2fc;
   transform: translateX(5px);
-  text-decoration: underline;
 }
 
 /* Bottom section with copyright */
@@ -357,7 +359,7 @@ main {
   text-align: center;
   font-size: 0.9rem;
   opacity: 0.85;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding-top: 15px;
   margin-top: 20px;
   max-width: 800px; /* 🔹 Match with content width */
