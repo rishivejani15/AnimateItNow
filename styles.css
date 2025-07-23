@@ -15,15 +15,20 @@
   --card-bg: #fff;
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --light: #f9f9f9;
+  --secondary: #2563eb; 
   --primary: #4f8cff;
   --white: #ffffff;
 }
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: var(--primary-bg);
+  background: url("images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
   color: var(--primary-text);
   transition: background var(--transition), color var(--transition);
   min-height: 100vh;
+  transition: background 0.5s ease 0.2s;
 }
 
 .list-group {
@@ -139,7 +144,7 @@ body {
 }
 
 /* add underline in navLinks */
-.nav-links a::after{
+/* .nav-links a::after{
   content: "";
   position: absolute;
   left: 0;
@@ -148,7 +153,7 @@ body {
   height: 2px;
   background-color: var(--accent);
   transition: width 0.3s ease;
-}
+} */
 
 .nav-links a:hover::after{
   width: 100%;
@@ -217,7 +222,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 80px;
-  background: url("images/bg.jpg");
+  background: transparent;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -304,7 +309,7 @@ main {
   /* margin: 3rem 0; */
 
   padding: 2rem 1.5rem;
-  background: var(--card-bg);
+  background: rgba(255, 255, 255, 0.85);  /* Light semi-transparent */
   border-radius: 1.2rem;
   box-shadow: var(--card-shadow);
 
@@ -462,8 +467,10 @@ body.dark {
   --footer-bg: #23272f;
   --footer-text: #f3f3f3;
   --card-bg: #23272f;
-  --background-image: url("images/bgdark.png");
+  background: url("images/bgdark.png") no-repeat center center fixed;
+  background-size: cover;
 }
+
 body.dark .landing-section {
   /* background: linear-gradient(120deg, #23272f 0%, #181a20 100%); */
   background: var(--background-image);
@@ -508,17 +515,15 @@ body.dark .info-section p {
 .template-card {
   background: var(--card-bg);
   border-radius: 1.1rem;
-  box-shadow: black;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   padding: 2rem 1.2rem 1.5rem 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center; 
   transform: translateY(40px);
-
   animation: none;
   position: relative;
   overflow: hidden;
-
   transition: opacity 0.7s, transform 0.7s;
 }
 
@@ -1049,4 +1054,17 @@ body.dark .submit-btn.disabled:hover {
   opacity: 0.85;
   transition: transform 0.2s ease;
   will-change: transform, left, top;
+}
+
+/* Smooth transition for all key elements */
+body,
+.navbar,
+.info-section,
+.footer,
+.contact-container,
+.template-card,
+.contributor-card,
+.form-group input,
+.form-group textarea {
+  transition: background 0.4s ease 0.2s, color 0.4s ease 0.2s, box-shadow 0.4s ease 0.2s;
 }
