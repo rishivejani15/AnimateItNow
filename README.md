@@ -126,6 +126,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/AnujShrivastava01/AnimateItNow@main/images/admin-badge.png" alt="Project Admin" width="80"/>
+</div>
+
 ## 👑 Project Admin
 
 **Anuj Shrivastava**
