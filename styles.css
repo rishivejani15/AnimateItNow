@@ -1077,27 +1077,6 @@ body.dark .form-group textarea:focus {
   border-color: var(--accent);
 }
 
-/* for mobile after screen size 450px */
-
-@media (max-width: 450px) {
-  .contact-main {
-    padding: 2px;
-  }
-
-  .contact-container {
-    padding: 2rem;
-  }
-
-  .form-group{
-    padding: 1px;
-  }
-  .contact-form{
-    padding: 1px;
-  }
-  .contact-main h1{
-    font-size: 3rem;
-  }
-}
 
 /* Mobile responsive */
 @media (max-width: 700px) {
