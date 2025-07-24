@@ -26,7 +26,8 @@
 ---
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/354202/rainbow.svg" width="32" alt="Rainbow Icon"/>
+  <!-- Rainbow SVG Emoji -->
+  <span style="font-size:2em;">🌈</span>
 </p>
 
 ## 🌈 What is AnimateItNow?
@@ -47,7 +48,8 @@
 ---
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/354380/sparkle.svg" width="32" alt="Sparkle Icon"/>
+  <!-- Sparkle SVG Emoji -->
+  <span style="font-size:2em;">✨</span>
 </p>
 
 ## ✨ Features & Demos
@@ -66,7 +68,8 @@
 ---
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/354262/tools.svg" width="32" alt="Tools Icon"/>
+  <!-- Tools SVG Emoji -->
+  <span style="font-size:2em;">🛠️</span>
 </p>
 
 ## 🛠️ How to Contribute
@@ -86,7 +89,8 @@
 ---
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/354262/user.svg" width="32" alt="User Icon"/>
+  <!-- User SVG Emoji -->
+  <span style="font-size:2em;">👤</span>
 </p>
 
 ## 👤 About the Creator
@@ -103,7 +107,8 @@
 ---
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/354262/insights.svg" width="32" alt="Insights Icon"/>
+  <!-- Insights SVG Emoji -->
+  <span style="font-size:2em;">🔖</span>
 </p>
 
 ## 🔖 Project Insights
@@ -136,7 +141,8 @@
 ---
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/354262/puzzle.svg" width="32" alt="Puzzle Icon"/>
+  <!-- Puzzle SVG Emoji -->
+  <span style="font-size:2em;">💡</span>
 </p>
 
 ## 💡 Why Open Source?
@@ -151,7 +157,8 @@
 ---
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/354262/monitor.svg" width="32" alt="Monitor Icon"/>
+  <!-- Monitor SVG Emoji -->
+  <span style="font-size:2em;">🎬</span>
 </p>
 
 ## 🎬 Demo & Example Animation
@@ -182,7 +189,8 @@
 ---
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/354262/mail.svg" width="32" alt="Mail Icon"/>
+  <!-- Mail SVG Emoji -->
+  <span style="font-size:2em;">📬</span>
 </p>
 
 ## 📬 Contact
@@ -197,7 +205,8 @@
 ---
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/354262/license.svg" width="32" alt="License Icon"/>
+  <!-- License SVG Emoji -->
+  <span style="font-size:2em;">📄</span>
 </p>
 
 ## 📄 License
