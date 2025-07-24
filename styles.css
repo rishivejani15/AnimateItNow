@@ -1138,8 +1138,7 @@ body.dark .contact-container {
 }
 
 body.contact.dark {
-  background: var(--background-image);
-  background-repeat: no-repeat;
+  background: url("images/bgdark.png") no-repeat center center;
   background-size: cover;
   background-position: center;
 }
