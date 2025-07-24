@@ -256,6 +256,29 @@
     text-align: left;
   }
 
+  .copy-btn {
+        display: inline-block;
+        margin: 0.5rem 0 1rem;
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--accent);
+        color: #fff;
+        cursor: pointer;
+        transition: transform 0.1s ease;
+      }
+      .copy-btn:hover {
+        background-color: #0056b3;
+      }
+      .copy-btn:active {
+        transform: scale(0.95);
+      }
+      .copy-btn:disabled {
+        opacity: 0.6;
+        cursor: default;
+      }
+
   /* Responsive */
   @media (max-width: 480px) {
     section {
@@ -329,6 +352,7 @@ form.login-form button:hover {
 }
 &lt;/style&gt;
   </pre>
+  <button class="expand-btn copy-btn" aria-label="Copy code">Copy Code</button>
 </section>
 
 <section class="variant-2">
@@ -380,6 +404,7 @@ form.login-form button:hover {
 }
 &lt;/style&gt;
   </pre>
+  <button class="expand-btn copy-btn" aria-label="Copy code">Copy Code</button>
 </section>
 
 <section class="variant-3">
@@ -424,6 +449,7 @@ form.login-form button:hover {
 }
 &lt;/style&gt;
   </pre>
+  <button class="expand-btn copy-btn" aria-label="Copy code">Copy Code</button>
 </section>
 
 <section class="variant-4">
@@ -526,6 +552,7 @@ form.login-form button:hover {
 }
 &lt;/style&gt;
   </pre>
+  <button class="expand-btn copy-btn" aria-label="Copy code">Copy Code</button>
   </section>
 
   <section class="variant-6">
@@ -580,6 +607,7 @@ form.login-form button:hover {
 }
 &lt;/style&gt;
   </pre>
+  <button class="expand-btn copy-btn" aria-label="Copy code">Copy Code</button>
   </section>
 
   <section class="variant-7">
@@ -639,6 +667,7 @@ form.login-form button:hover {
 }
 &lt;/style&gt;
   </pre>
+  <button class="expand-btn copy-btn" aria-label="Copy code">Copy Code</button>
   </section>
 
   <section class="variant-8">
@@ -695,6 +724,7 @@ form.login-form button:hover {
 }
 &lt;/style&gt;
   </pre>
+  <button class="expand-btn copy-btn" aria-label="Copy code">Copy Code</button>
   </section>
 
   <section class="variant-9">
@@ -755,6 +785,7 @@ form.login-form button:hover {
 }
 &lt;/style&gt;
   </pre>
+  <button class="expand-btn copy-btn" aria-label="Copy code">Copy Code</button>
 </section>
 
 <script>
@@ -765,6 +796,23 @@ form.login-form button:hover {
     codeBlock.style.display = isVisible ? "none" : "block";
     button.textContent = isVisible ? "Show Code" : "Hide Code";
   }
+
+  document.querySelectorAll(".copy-btn").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const codeBlock = btn.previousElementSibling;
+          try {
+            await navigator.clipboard.writeText(codeBlock.innerText);
+            btn.textContent = "Copied!";
+            btn.disabled = true;
+            setTimeout(() => {
+              btn.textContent = "Copy Code";
+              btn.disabled = false;
+            }, 1500);
+          } catch (err) {
+            console.error("Copy failed:", err);
+          }
+        });
+      });
 
   // Dark mode toggle
   const themeToggleBtn = document.getElementById('theme-toggle');
