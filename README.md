@@ -120,24 +120,19 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🌟 Project Admin
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/admin-profile.jpg" alt="Anuj Shrivastava" width="160" style="border-radius:12px;"/>
-</p>
 
 <p align="center">
-  <b>Anuj Shrivastava</b>
-</p>
-
-<p align="center">
-  Project Admin
-</p>
-
-<p align="center">
-  <a href="https://github.com/AnujShrivastava01" target="_blank">
-    <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="margin-right:8px;"/>
-  </a>
-  <a href="https://www.linkedin.com/in/anujshrivastava1/" target="_blank">
-    <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
+  <img src="https://github.com/AnujShrivastava01.png" width="100px;" alt="Anuj Shrivastava"/><br />
+<sub><b>Anuj Shrivastava</b></sub><br />
+<sub>Project Admin</sub><br />
+<br/>
+<a href="https://github.com/AnujShrivastava01">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a><br/>
+<a href="https://www.linkedin.com/in/anujshrivastava1/">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+  
 </p>
 
 <p align="center">
