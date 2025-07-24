@@ -23,11 +23,6 @@
   <b>Welcome to AnimateItNow — a creative, open-source hub for beautiful web UI components and animations!</b>
 </p>
 
-<!-- Animated line -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
-</p>
-
 <!-- Project Stats (moved to top) -->
 <p align="center">
   <img src="https://img.shields.io/github/issues/itsAnimation/AnimateItNow?style=for-the-badge" alt="Open Issues"/>
@@ -38,11 +33,6 @@
   <img src="https://img.shields.io/github/last-commit/itsAnimation/AnimateItNow?style=for-the-badge" alt="Last Commit"/>
   <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge" alt="Contributions Welcome"/>
   <img src="https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge" alt="Version"/>
-</p>
-
-<!-- Animated line -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
 </p>
 
 <p align="center">
@@ -57,11 +47,6 @@ AnimateItNow is a collaborative platform where contributors share, discover, and
 - Contribute your own creative ideas
 - Learn modern web animation techniques
 
-<!-- Animated line -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
-</p>
-
 <p align="center">
   <span style="font-size:3em;">✨</span>
 </p>
@@ -73,11 +58,6 @@ AnimateItNow is a collaborative platform where contributors share, discover, and
 - **Easy Navigation:** Browse templates, contributors, and contact info
 - **Theme Toggle:** Switch between light and dark modes
 - **Mouse Tracker:** Disabled in mobile layout
-
-<!-- Animated line -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
-</p>
 
 <p align="center">
   <span style="font-size:3em;">🛠️</span>
@@ -93,11 +73,6 @@ AnimateItNow is a collaborative platform where contributors share, discover, and
 
 All skill levels are welcome! Check out the [Templates Gallery](./templates.html) for inspiration.
 
-<!-- Animated line -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
-</p>
-
 <p align="center">
   <span style="font-size:3em;">👤</span>
 </p>
@@ -108,34 +83,6 @@ All skill levels are welcome! Check out the [Templates Gallery](./templates.html
 
 - [LinkedIn](https://www.linkedin.com/in/anujshrivastava1/)
 - [GitHub](https://github.com/AnujShrivastava01)
-
-<!-- Animated line -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
-</p>
-
-<p align="center">
-  <span style="font-size:3em;">🔖</span>
-</p>
-
-## 🔖 Project Insights
-
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=itsAnimation&repo=AnimateItNow&show_owner=true&theme=radical" alt="GitHub Stats" height="200"/>
-  </a>
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=itsAnimation&theme=radical&margin-w=10&margin-h=10&column=6" alt="GitHub Trophy" height="200"/>
-  </a>
-  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-    <img src="https://streak-stats.demolab.com?user=itsAnimation&theme=radical" alt="GitHub Streak" height="200"/>
-  </a>
-</p>
-
-<!-- Animated line -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
-</p>
 
 <p align="center">
   <span style="font-size:3em;">💡</span>
