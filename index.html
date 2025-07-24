@@ -72,7 +72,11 @@
       discovering stunning web UI components. Join us to contribute, learn,
       and inspire others!
     </p>
-    <a href="#faq" class="cta-btn bounce">Get Started</a>
+<a href="#faq" class="cta-btn bounce"
+   onclick="event.preventDefault(); const el = document.getElementById('faq'); window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' });">
+   Get Started
+</a>
+
   </header>
 
   <!-- ───────── MAIN ───────── -->
