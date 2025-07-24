@@ -23,98 +23,13 @@
   <b>Welcome to AnimateItNow — a creative, open-source hub for beautiful web UI components and animations!</b>
 </p>
 
----
-
+<!-- Animated line -->
 <p align="center">
-  <!-- Rainbow SVG Emoji -->
-  <span style="font-size:2em;">🌈</span>
+  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
 </p>
 
-## 🌈 What is AnimateItNow?
-
-<details>
-  <summary><b>About AnimateItNow</b></summary>
-  <p align="center">
-    AnimateItNow is a collaborative platform where contributors share, discover, and learn from stunning web UI components and CSS/JS animations. Whether you're a beginner or a pro, you can:
-  </p>
-  <ul>
-    <li>Explore ready-to-use templates (Login forms, Buttons, Loaders, Modals, and more)</li>
-    <li>See live previews and code</li>
-    <li>Contribute your own creative ideas</li>
-    <li>Learn modern web animation techniques</li>
-  </ul>
-</details>
-
----
-
+<!-- Project Stats (moved to top) -->
 <p align="center">
-  <!-- Sparkle SVG Emoji -->
-  <span style="font-size:2em;">✨</span>
-</p>
-
-## ✨ Features & Demos
-
-<details>
-  <summary><b>Show Features</b></summary>
-  <ul>
-    <li><b>Modern UI Templates:</b> Login pages, animated buttons, loaders, modals</li>
-    <li><b>Live Previews:</b> See animations in action before using</li>
-    <li><b>Easy Navigation:</b> Browse templates, contributors, and contact info</li>
-    <li><b>Theme Toggle:</b> Switch between light and dark modes</li>
-    <li><b>Mouse Tracker:</b> Disabled in mobile layout</li>
-  </ul>
-</details>
-
----
-
-<p align="center">
-  <!-- Tools SVG Emoji -->
-  <span style="font-size:2em;">🛠️</span>
-</p>
-
-## 🛠️ How to Contribute
-
-<details>
-  <summary><b>Show Contribution Guide</b></summary>
-  <ol>
-    <li><b>Fork</b> this repository</li>
-    <li><b>Clone</b> your fork locally</li>
-    <li>Add your creative web components or animations in the appropriate folder</li>
-    <li>Update the gallery page to showcase your work</li>
-    <li><b>Submit a Pull Request</b> with a short description and preview</li>
-  </ol>
-  <p>All skill levels are welcome! Check out the <a href="./templates.html">Templates Gallery</a> for inspiration.</p>
-</details>
-
----
-
-<p align="center">
-  <!-- User SVG Emoji -->
-  <span style="font-size:2em;">👤</span>
-</p>
-
-## 👤 About the Creator
-
-<details>
-  <summary><b>Show Creator Info</b></summary>
-  <p align="center"><b>Anuj Shrivastava</b></p>
-  <p align="center">
-    <a href="https://www.linkedin.com/in/anujshrivastava1/">LinkedIn</a> |
-    <a href="https://github.com/AnujShrivastava01">GitHub</a>
-  </p>
-</details>
-
----
-
-<p align="center">
-  <!-- Insights SVG Emoji -->
-  <span style="font-size:2em;">🔖</span>
-</p>
-
-## 🔖 Project Insights
-
-<p align="center">
-  <!-- Shields.io Badges -->
   <img src="https://img.shields.io/github/issues/itsAnimation/AnimateItNow?style=for-the-badge" alt="Open Issues"/>
   <img src="https://img.shields.io/github/issues-pr/itsAnimation/AnimateItNow?style=for-the-badge" alt="Open PRs"/>
   <img src="https://img.shields.io/github/contributors/itsAnimation/AnimateItNow?style=for-the-badge" alt="Contributors"/>
@@ -125,40 +40,113 @@
   <img src="https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge" alt="Version"/>
 </p>
 
+<!-- Animated line -->
 <p align="center">
-  <!-- GitHub Readme Widgets -->
+  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
+</p>
+
+<p align="center">
+  <span style="font-size:3em;">🌈</span>
+</p>
+
+## 🌈 What is AnimateItNow?
+
+AnimateItNow is a collaborative platform where contributors share, discover, and learn from stunning web UI components and CSS/JS animations. Whether you're a beginner or a pro, you can:
+- Explore ready-to-use templates (Login forms, Buttons, Loaders, Modals, and more)
+- See live previews and code
+- Contribute your own creative ideas
+- Learn modern web animation techniques
+
+<!-- Animated line -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
+</p>
+
+<p align="center">
+  <span style="font-size:3em;">✨</span>
+</p>
+
+## ✨ Features & Demos
+
+- **Modern UI Templates:** Login pages, animated buttons, loaders, modals
+- **Live Previews:** See animations in action before using
+- **Easy Navigation:** Browse templates, contributors, and contact info
+- **Theme Toggle:** Switch between light and dark modes
+- **Mouse Tracker:** Disabled in mobile layout
+
+<!-- Animated line -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
+</p>
+
+<p align="center">
+  <span style="font-size:3em;">🛠️</span>
+</p>
+
+## 🛠️ How to Contribute
+
+1. **Fork** this repository
+2. **Clone** your fork locally
+3. Add your creative web components or animations in the appropriate folder
+4. Update the gallery page to showcase your work
+5. **Submit a Pull Request** with a short description and preview
+
+All skill levels are welcome! Check out the [Templates Gallery](./templates.html) for inspiration.
+
+<!-- Animated line -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
+</p>
+
+<p align="center">
+  <span style="font-size:3em;">👤</span>
+</p>
+
+## 👤 About the Creator
+
+**Anuj Shrivastava**
+
+- [LinkedIn](https://www.linkedin.com/in/anujshrivastava1/)
+- [GitHub](https://github.com/AnujShrivastava01)
+
+<!-- Animated line -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
+</p>
+
+<p align="center">
+  <span style="font-size:3em;">🔖</span>
+</p>
+
+## 🔖 Project Insights
+
+<p align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=itsAnimation&show_icons=true&theme=radical" alt="GitHub Stats" height="180"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=itsAnimation&repo=AnimateItNow&show_owner=true&theme=radical" alt="GitHub Stats" height="200"/>
   </a>
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=itsAnimation&theme=radical&margin-w=10&margin-h=10" alt="GitHub Trophy" height="180"/>
+    <img src="https://github-profile-trophy.vercel.app/?username=itsAnimation&theme=radical&margin-w=10&margin-h=10&column=6" alt="GitHub Trophy" height="200"/>
   </a>
   <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-    <img src="https://streak-stats.demolab.com?user=itsAnimation&theme=radical" alt="GitHub Streak" height="180"/>
+    <img src="https://streak-stats.demolab.com?user=itsAnimation&theme=radical" alt="GitHub Streak" height="200"/>
   </a>
 </p>
 
----
+<!-- Animated line -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnujShrivastava01/AnimateItNow/main/images/animated-line.svg" alt="Animated Line" width="80%"/>
+</p>
 
 <p align="center">
-  <!-- Puzzle SVG Emoji -->
-  <span style="font-size:2em;">💡</span>
+  <span style="font-size:3em;">💡</span>
 </p>
 
 ## 💡 Why Open Source?
 
-<details>
-  <summary><b>Show Open Source Philosophy</b></summary>
-  <p align="center">
-    Open source empowers everyone to learn, share, and build together. AnimateItNow is a place for collaboration, growth, and innovation in web design and animation.
-  </p>
-</details>
-
----
+Open source empowers everyone to learn, share, and build together. AnimateItNow is a place for collaboration, growth, and innovation in web design and animation.
 
 <p align="center">
-  <!-- Monitor SVG Emoji -->
-  <span style="font-size:2em;">🎬</span>
+  <span style="font-size:3em;">🎬</span>
 </p>
 
 ## 🎬 Demo & Example Animation
@@ -168,55 +156,35 @@
   <img src="https://raw.githubusercontent.com/itsAnimation/AnimateItNow/main/images/demo.gif" alt="AnimateItNow Demo" width="400"/>
 </p>
 
-<details>
-  <summary><b>Show Example CSS Animation</b></summary>
-
-  ```css
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-10px);
-    }
+```css
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
-  .bounce {
-    animation: bounce 1.2s infinite alternate;
+  100% {
+    transform: translateY(-10px);
   }
-  ```
-</details>
-
----
+}
+.bounce {
+  animation: bounce 1.2s infinite alternate;
+}
+```
 
 <p align="center">
-  <!-- Mail SVG Emoji -->
-  <span style="font-size:2em;">📬</span>
+  <span style="font-size:3em;">📬</span>
 </p>
 
 ## 📬 Contact
 
-<details>
-  <summary><b>Show Contact Info</b></summary>
-  <p align="center">
-    For questions, suggestions, or collaboration, reach out via <a href="https://www.linkedin.com/in/anujshrivastava1/">LinkedIn</a> or <a href="https://github.com/itsAnimation/AnimateItNow/issues">open an issue</a>!
-  </p>
-</details>
-
----
+For questions, suggestions, or collaboration, reach out via [LinkedIn](https://www.linkedin.com/in/anujshrivastava1/) or [open an issue](https://github.com/itsAnimation/AnimateItNow/issues)!
 
 <p align="center">
-  <!-- License SVG Emoji -->
-  <span style="font-size:2em;">📄</span>
+  <span style="font-size:3em;">📄</span>
 </p>
 
 ## 📄 License
 
-<details>
-  <summary><b>Show License Info</b></summary>
-  <p align="center">
-    This project is licensed under the <a href="LICENSE">MIT License</a>.
-  </p>
-</details>
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
