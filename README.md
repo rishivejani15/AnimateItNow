@@ -23,7 +23,6 @@
   <b>Welcome to AnimateItNow — a creative, open-source hub for beautiful web UI components and animations!</b>
 </p>
 
-<!-- Project Stats (moved to top) -->
 <p align="center">
   <img src="https://img.shields.io/github/issues/itsAnimation/AnimateItNow?style=for-the-badge" alt="Open Issues"/>
   <img src="https://img.shields.io/github/issues-pr/itsAnimation/AnimateItNow?style=for-the-badge" alt="Open PRs"/>
@@ -35,9 +34,9 @@
   <img src="https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge" alt="Version"/>
 </p>
 
-<p align="center">
-  <span style="font-size:3em;">🌈</span>
-</p>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
+</div>
 
 ## 🌈 What is AnimateItNow?
 
@@ -47,9 +46,9 @@ AnimateItNow is a collaborative platform where contributors share, discover, and
 - Contribute your own creative ideas
 - Learn modern web animation techniques
 
-<p align="center">
-  <span style="font-size:3em;">✨</span>
-</p>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
+</div>
 
 ## ✨ Features & Demos
 
@@ -59,9 +58,9 @@ AnimateItNow is a collaborative platform where contributors share, discover, and
 - **Theme Toggle:** Switch between light and dark modes
 - **Mouse Tracker:** Disabled in mobile layout
 
-<p align="center">
-  <span style="font-size:3em;">🛠️</span>
-</p>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
+</div>
 
 ## 🛠️ How to Contribute
 
@@ -73,9 +72,9 @@ AnimateItNow is a collaborative platform where contributors share, discover, and
 
 All skill levels are welcome! Check out the [Templates Gallery](./templates.html) for inspiration.
 
-<p align="center">
-  <span style="font-size:3em;">👤</span>
-</p>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
+</div>
 
 ## 👤 About the Creator
 
@@ -84,17 +83,17 @@ All skill levels are welcome! Check out the [Templates Gallery](./templates.html
 - [LinkedIn](https://www.linkedin.com/in/anujshrivastava1/)
 - [GitHub](https://github.com/AnujShrivastava01)
 
-<p align="center">
-  <span style="font-size:3em;">💡</span>
-</p>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
+</div>
 
 ## 💡 Why Open Source?
 
 Open source empowers everyone to learn, share, and build together. AnimateItNow is a place for collaboration, growth, and innovation in web design and animation.
 
-<p align="center">
-  <span style="font-size:3em;">🎬</span>
-</p>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
+</div>
 
 ## 🎬 Demo & Example Animation
 
@@ -117,23 +116,23 @@ Open source empowers everyone to learn, share, and build together. AnimateItNow 
 }
 ```
 
-<p align="center">
-  <span style="font-size:3em;">📬</span>
-</p>
-
 ## 📬 Contact
 
 For questions, suggestions, or collaboration, reach out via [LinkedIn](https://www.linkedin.com/in/anujshrivastava1/) or [open an issue](https://github.com/itsAnimation/AnimateItNow/issues)!
-
-<p align="center">
-  <span style="font-size:3em;">📄</span>
-</p>
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
+
+## 👑 Project Admin
+
+**Anuj Shrivastava**
+
+- [GitHub Profile](https://github.com/AnujShrivastava01)
+- [LinkedIn](https://www.linkedin.com/in/anujshrivastava1/)
+- [GitHub Readme Stats](https://github-readme-stats.vercel.app/api?username=AnujShrivastava01&show_icons=true&theme=radical)
 
 <p align="center">
   Made with ❤️ by Anuj and Contributors
