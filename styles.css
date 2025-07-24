@@ -1065,7 +1065,8 @@ body.dark .form-group textarea {
 }
 
 body.dark .contact-main h1 {
-  color: #ffffff;
+  color: #8aadf4;
+  text-shadow: 0 0 5px rgba(138, 173, 244, 0.3);
 }
 
 body.dark .navbar {
