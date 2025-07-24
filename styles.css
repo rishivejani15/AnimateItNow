@@ -27,6 +27,7 @@ body {
 }
 
 .list-group {
+  color:white;
   list-style: none; /* Removes bullets */
   padding: 0;
   margin: 0;
@@ -332,12 +333,26 @@ main {
   /* margin: 3rem 0; */
 
   padding: 2rem 1.5rem;
-  background: var(--card-bg);
+  /* background: var(--card-bg); */
   border-radius: 1.2rem;
   box-shadow: var(--card-shadow);
+  background: linear-gradient(45deg, #c07db6,#4d336c,#23aed5, #f48e21);
+  background-size:200% 200% ;
+  animation: color 12s ease-in-out infinite;
 
   transform: translateY(40px);
   transition: opacity 0.7s, transform 0.7s;
+}
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 .info-section.visible {
   opacity: 1;
@@ -348,7 +363,7 @@ main {
   color: var(--accent);
 }
 .info-section p {
-  color: #444;
+  color: #ffffff;
 }
 
 /* Footer */
