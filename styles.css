@@ -1043,8 +1043,8 @@ body.dark .contributor-card:hover {
 }
 .contact-main {
   width: 80%;
-  padding: 0rem 1rem 1rem 1rem 1rem;
-  margin: 3rem 0 5rem 0;
+  padding: 1rem;
+  margin-bottom: 4rem;
 }
 .contact-main h1 {
   font-size: 3.5rem;
@@ -1055,7 +1055,7 @@ body.dark .contributor-card:hover {
   border-radius: 1.2rem;
   box-shadow: 0.5rem 0.5rem 1rem;
   padding: 2.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   transition: all 1s linear;
 }
 
@@ -1106,23 +1106,15 @@ body.dark .contributor-card:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.submit-btn {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.85rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  width: 40%;
+
 }
 
-.submit-btn:hover {
+ #submit{
+  cursor: pointer;
+  padding: 0.85rem 2rem;
   background: #2563eb;
-}
+  border-radius: 10px;
+ }
 
 /* Dark theme support */
 body.dark .form-group input,
@@ -1157,16 +1149,18 @@ body.dark .form-group textarea:focus {
   border-color: var(--accent);
 }
 
+
 /* Mobile responsive */
 @media (max-width: 700px) {
   .contact-main {
-    padding: 5rem 1rem 2rem 1rem;
+    padding: 5rem 2rem 2rem 1rem;
   }
 
   .contact-container {
     padding: 2rem;
   }
 }
+
 
 /* Disabled button styles */
 .submit-btn:disabled,
