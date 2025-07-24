@@ -208,6 +208,17 @@ body {
   fill: #0366d6; 
 }
 
+/* ProgressBar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0.4rem;
+  background: linear-gradient(135deg, #3f5efb, #9f5de2, #ff6ec4);
+  z-index: 9999;
+}
+
 /* Theme Toggle */
 #theme-toggle {
   background: transparent;
