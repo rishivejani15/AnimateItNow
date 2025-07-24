@@ -120,7 +120,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🌟 Project Admin
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/itsAnimation/AnimateItNow/main/images/pa.png" width="320px;" alt="Project Admin"/><br />
+  <img src="https://raw.githubusercontent.com/itsAnimation/AnimateItNow/main/images/pa.png" width="400px;" alt="Project Admin"/><br />
 
   <br/>
   <a href="https://github.com/AnujShrivastava01">
