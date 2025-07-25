@@ -304,6 +304,9 @@ body {
 .nav-links .switch input:checked + .slider:before {
   transform: translateX(18px);
 }
+.fade-in span{
+  color: #00d1ff;
+}
 
 /* Landing Section */
 .landing-section {
