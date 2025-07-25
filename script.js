@@ -187,5 +187,24 @@ if (!isMobile && cursorToggle) {
   // Initialize on load
   updateProgressBar();
 
+// Function to make the FAQ collapasble
+function toggleFAQ(element) {
+  const faqItem = element.closest('.faq-item'); //to make sure we can click anywhere
+  const isActive = faqItem.classList.contains('active');
+  
+  // Close all other FAQ items
+  document.querySelectorAll('.faq-item.active').forEach(item => {
+    if (item !== faqItem) {
+      item.classList.remove('active');
+    }
+  });
+  
+  // Toggle current item
+  faqItem.classList.toggle('active', !isActive);
+}
+
+// Make toggleFAQ globally accessible
+window.toggleFAQ = toggleFAQ;
+
 
 });
