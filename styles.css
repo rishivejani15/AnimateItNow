@@ -1746,3 +1746,25 @@ body.dark .glow-wrap::before {
     padding: 12px 16px;
   }
 }
+.tooltip-preview {
+    background-color: #e3f2fd; /* Softer blue background */
+    border: 2px dashed #90caf9; /* Dashed border */
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    margin-bottom: 20px;
+}
+
+/* This targets the button inside the preview */
+.tooltip-preview .tooltip {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #64b5f6; /* Correct blue button color */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
