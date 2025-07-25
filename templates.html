@@ -227,26 +227,11 @@
     /* Navbar Preview */
     .navbar-preview {
       background-color: #4f8cff;
-
-      display: flex;
-
       flex-direction: column;
       justify-content: center;
       padding: 12px;
       gap: 8px;
-
-      height: 90px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgb(0, 0, 0 / 0.1);
     }
-
-    body.dark-theme .navbar-preview {
-      background-color: #2a2a2a;
-    }
-
-
-   
-
 
     .navbar-line {
       height: 10px;
@@ -266,8 +251,6 @@
     .navbar-line.link.short {
       width: 50%;
     }
-
-
     
     /* ADDED: Animated Toggles Preview CSS */
     .toggles-preview {
@@ -305,9 +288,6 @@
     .mini-toggle.on .mini-handle {
         transform: translateX(25px);
     }
-<<<<<<< HEAD
- upstream/main
-=======
 /*Display Properties Preview */
 .display-preview {
   background-color: #4f8cff;
@@ -350,7 +330,6 @@ body.dark-theme .display-preview {
   box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
 }
 
->>>>>>> upstream/main
   </style>
 </head>
 <body>
@@ -373,43 +352,6 @@ body.dark-theme .display-preview {
              class="github-icon">
             <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 
-<<<<<<< HEAD
-                7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49
-                -2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-                -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82
-               .72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07
-              -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-              -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
-              .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27
-              1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
-              .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95
-              .29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
-              0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
-          </a>
-        </li>
-        <li><button id="theme-toggle" aria-label="Toggle Theme">
-              <i data-lucide="moon"></i>
-            </button>
-        </li>
-      </ul>
-      </div>
-    </nav>
-
-
-  <main class="templates-main">
-    <h1>Templates Gallery</h1>
-      <!-- 🔍 Search Bar & Category Filter Start -->
-  <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
-  <input
-    type="text"
-    id="search-bar"
-    placeholder="Search templates..."
-    style="padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid #ccc; min-width: 420px;"
-    aria-label="Search templates"
-  />
-</div>
-
                          7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49
                          -2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
                          -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82
@@ -444,7 +386,6 @@ body.dark-theme .display-preview {
         aria-label="Search templates"
       />
     </div>
-
     <section class="templates-grid">
       <a class="template-card" href="templates/login.html">
         <h2>Login Page UI</h2>
@@ -496,22 +437,6 @@ body.dark-theme .display-preview {
         <button class="template-btn">View Template</button>
       </a>
 
-    
-
-    <!-- NEWLY ADDED TOOLTIP COMPONENT -->
-    <article class="template-card">
-        <h2>Tooltip UI Component</h2>
-        <div class="template-preview">
-            <button class="tooltip" data-tooltip="I’m a tooltip!">Hover</button>
-            
-        </div>
-        <a class="template-btn" href="templates/tooltip.html">View Template</a>
-    </article>
-    
-      <!-- NEWLY ADDED SOCIAL SHARE BUTTONS CARD -->
-
-
-
       <a class="template-card" href="templates/social-share-buttons.html">
         <h2>Animated Social Share Buttons</h2>
         <div class="template-preview social-share-preview">
@@ -521,81 +446,15 @@ body.dark-theme .display-preview {
         </div>
         <button class="template-btn">View Template</button>
       </a>
-
-
-      <a class="template-card" href="templates/neumorphic.html">
-        <h2>Neumorphic Button Effects</h2>
-        <div class="template-preview neumorphic-preview"></div>
-        <button class="template-btn">View Template</button>
-      </a>
-
-      <!--NAVBAR--->
-      <a class="template-card" href="templates/navbar.html">
-        <h2>Navbar Variants</h2>
-        <div class="template-preview navbar-preview">
-          <div class="navbar-line logo"></div>
-          <div class="navbar-line link"></div>
-          <div class="navbar-line link short"></div>
-        </div>
-        <a class="template-btn" href="templates/navbar.html">View Template</a>
-      </article> 
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-left">
-          <h2>AnimateItNow</h2>
-          <p>Creating impactful web animations and templates for everyone.</p>
-        </div>
-        <div class="footer-right">
-          <h4>Connect With Us</h4>
-          <ul>
-            <li>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
-                >🌐 GitHub</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >💼 LinkedIn</a
-              >
-            </li>
-            <li>
-              <a href="mailto:contact@animateitnow.com" rel="noopener noreferrer"
-                >📧 Email Us</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          © 2025 AnimateItNow. Made with ❤️ by
-          <span class="highlight">Anuj</span> and Contributors.
-        </p>
-      </div>
-    </footer>
-    <div id="cursor-snake"></div>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      // Theme toggle functionality
-      const themeToggle = document.getElementById('theme-toggle');
-  const body = document.body;
-
-  function setTheme(dark) {
-    const newIcon = dark ? 'sun' : 'moon';
-    body.classList.toggle('dark', dark);
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
-
-    // Replace icon completely
-    if (themeToggle) {
-      themeToggle.innerHTML = `<i data-lucide="${newIcon}"></i>`;
-      lucide.createIcons();
-=======
       
+     <!-- CORRECTED TOOLTIP COMPONENT -->
+<a class="template-card" href="templates/tooltip.html">
+    <h2>Tooltip UI Component</h2>
+    <div class="template-preview">
+        <button class="tooltip" data-tooltip="I’m a tooltip!">Hover</button>
+    </div>
+    <span class="template-btn">View Template</span>
+</a>
       <!-- NEWLY ADDED ANIMATED TOGGLES CARD -->
       <a class="template-card" href="templates/toggles-and-checkboxes.html">
         <h2>Animated Toggles</h2>
@@ -635,6 +494,14 @@ body.dark-theme .display-preview {
         <button class="template-btn">View Template</button>
       </a>
 
+
+      <a class="template-card" href="templates/CardHoverEffects.html">
+        <h2>3D Card Hover Effects</h2>
+        <div class="template-preview navbar-preview">
+          <div class="navbar-line link"></div>
+        </div>
+        <button class="template-btn">View Template</button>
+      </a>
     </section>
   </main>
   <footer class="footer">
@@ -675,21 +542,7 @@ body.dark-theme .display-preview {
         themeToggle.innerHTML = `<i data-lucide="${newIcon}"></i>`;
         lucide.createIcons();
       }
- upstream/main
     }
-  }
-
-  const savedTheme = localStorage.getItem('theme');
-  setTheme(savedTheme === 'dark');
-
-  themeToggle?.addEventListener('click', () => {
-    const isDark = body.classList.contains('dark');
-    setTheme(!isDark);
-  });
-
-  lucide.createIcons();
-
- 
 
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -698,7 +551,6 @@ body.dark-theme .display-preview {
     themeToggle?.addEventListener('click', () => {
       setTheme(!body.classList.contains('dark-theme'));
     });
- upstream/main
 
     lucide.createIcons();
 
@@ -717,34 +569,6 @@ body.dark-theme .display-preview {
     document.querySelectorAll(".template-card").forEach((card) => {
       observer.observe(card);
     });
-
-
-    
-         // 🔍 Search & Category Filter Functionality
-   const searchBar = document.getElementById('search-bar');
-  const templateCards = document.querySelectorAll('.template-card');
-  const noResultsMsg = document.getElementById('no-results');
-
-  function filterTemplates() {
-    const query = searchBar.value.trim().toLowerCase();
-    let visibleCount = 0;
-
-    templateCards.forEach(card => {
-      const title = card.querySelector('h2').textContent.trim().toLowerCase();
-      const matchesTitle = title.startsWith(query);
-      if (matchesTitle) {
-        card.style.display = '';
-        visibleCount++;
-      } else {
-        card.style.display = 'none';
-      }
-    });
-
-    noResultsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
-  }
-
-  searchBar.addEventListener('input', filterTemplates);
-
 
     // Search & Category Filter Functionality
     const searchBar = document.getElementById('search-bar');
@@ -773,7 +597,6 @@ body.dark-theme .display-preview {
     }
 
     searchBar.addEventListener('input', filterTemplates);
-upstream/main
   </script>
 </body>
 </html>
