@@ -1,4 +1,4 @@
-# AnimateItNow 🚀✨
+# AnimateItNow 🚀
 
 <p align="center">
   <!-- Animated SVG Banner: Waving Hand & Keyboard Typing -->
