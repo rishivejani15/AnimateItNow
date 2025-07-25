@@ -1160,6 +1160,10 @@ body.dark .contributor-card:hover {
   font-weight:600px;
   font-size: 1rem;
   border-radius: 10px;
+  transition: all 0.2s;
+ }
+ #submit:active{
+  background-color: #163bb1;
  }
 
 /* Dark theme support */
