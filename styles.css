@@ -1114,6 +1114,10 @@ body.dark .contributor-card:hover {
   padding: 0.85rem 2rem;
   background: #2563eb;
   border-radius: 10px;
+  transition: all 0.2s;
+ }
+ #submit:active{
+  background-color: #163bb1;
  }
 
 /* Dark theme support */
