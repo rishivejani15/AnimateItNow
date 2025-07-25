@@ -192,10 +192,7 @@ body {
   }
 }
 
-.github-icon:hover svg path,
-.github-icon:focus svg path {
-  fill: #0366d6;
-}
+
 #cursor-snake {
   position: fixed;
   top: 0;
