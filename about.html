@@ -173,6 +173,13 @@
     themeToggle?.addEventListener('click', () => {
       setTheme(!body.classList.contains('dark'));
     });
+
+    // Load lucide icons after DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
   </script>
   <script src="script.js"></script>
 </body>
