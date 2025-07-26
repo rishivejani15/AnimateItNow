@@ -1905,6 +1905,7 @@ body.dark .template-card h2 {
   margin: 0;
   line-height: 1.7;
   color: var(--primary-text);
+  font-size: 1.2rem;
 }
 
 /* moving neon-style glow */
